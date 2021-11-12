@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icrement</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <p class="myWay" id="zero"></p>
+        <div class="butoon">
+            <button class="butoon1" id="btn" onclick="promise()">+</button>
+            <button class="butoon2" id="BTN" onclick="Sthemiso()">-</button>
+        </div>
+    </div>
+</body>
+<script>
+    var num = 0;
+    document.getElementById("zero").innerHTML = num;
+    function promise() {
+        num++;
+        document.getElementById("zero").innerHTML = num;
+    }
+    function Sthemiso() {
+        num--;
+        document.getElementById("zero").innerHTML = num;
+    }
+</script>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    .myWay {
+        padding-bottom: 15px;
+        margin: 0;
+        font-size: 50px;
+        border: none;
+        border-bottom: 2px solid beige;
+    }
+
+    .butoon {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .butoon1 {
+        margin-top: 1em;
+        width: 10%;
+        height: 20%;
+    }
+
+    .butoon2 {
+        margin-top: 1em;
+        width: 10%;
+        height: 20%;
+    }
+
+    .mainContainer {
+        width: 100%;
+        text-align: start;
+        background: cornflowerblue;
+        /* display: flex;
+        justify-content: space-between; */
+    }
+</style>
+
+</html>
